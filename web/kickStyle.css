@@ -1,0 +1,451 @@
+html{
+    overflow-x: hidden;
+}
+body{        
+    background-image: url("images/motive.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 1400px 710px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+}
+#top{
+    size: 40px;
+}
+.content{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333333;   
+    padding: 3px;    
+    height: 70px;
+    z-index: 1;
+}
+.top{
+    color: #ff0000;
+    margin-left: 0;
+    top: 0px;   
+    left: 115px;
+    position: relative;
+}
+.login{
+    top:-50px;
+    position: relative;
+    left:1000px;
+    text-decoration: none;
+    border-right:solid 1px #fff;
+}
+.otherPage {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.horizontal{
+    list-style: none;
+    top: -25px;   
+    width: 100%;
+    background-color: #cccccc;
+    height:70px;  
+    position: relative;
+   
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    bottom: -22px;
+    position: relative;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color:#ffffff ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.activemagic{
+    background-color: #000000;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: left;
+  left: -170px;
+  top: 60px;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 448px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: slateblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  top: 10px;
+ }
+
+.active, .dot:hover {
+  background-color: aqua;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.dotty
+{
+    position: relative;
+     left: 220px;
+     top : 5px;
+}
+.startup{
+    position: relative;
+    bottom:380px;
+    right: -800px;
+    background: linear-gradient(#999999, #ffffff);
+    color: #999900;
+    border-left: -320px;
+    border-right-width: 20px;
+    border-left-width: 20px;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 15s infinite;
+    background-color: #99ffcc;
+    display: inline-block;
+   
+    
+    
+}
+@-webkit-keyframes rightThenLeft {
+    0% {left: 47%;}
+    50%{left: 70%}
+    100%{left: 47%}
+    
+    
+}
+
+.story{
+    color: #333333;
+    position :relative;
+    bottom: 370px;
+    right: -600px;
+    backface-visibility: visible;
+    background: linear-gradient(#999999, #ffffff);
+    width: 600px;
+    height: 300px;
+    border: 2px solid #666;
+    border-radius: 8px;
+    padding:10px 10px;
+    margin: 25px;
+    overflow:auto;
+}
+.about{
+    right: 0;
+    left: 0;
+    position: relative;
+    bottom: 210px;
+    text-align: center;
+    color: #ff0000;
+   
+}
+.description{
+    bottom: 220px;
+    text-align: center;
+    position: relative;
+    
+    
+}
+#section2{
+    bottom: 440px;
+    background: linear-gradient(#999999, #ffffff);
+    left: 0;
+    right: 0;   
+    bottom: 0;
+}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides1 {display: none;}
+
+
+/* Slideshow container */
+.slideshow1-container {
+  
+  position: relative;
+  margin: auto;
+  left: 375px;
+  bottom: 120px;
+ 
+  
+}
+/* The dots/bullets/indicators */
+.dot1 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 137px;
+  position: relative;
+  left: -25px;
+  cursor: pointer;
+
+}
+.active, .dot1:hover {
+  background-color: #717171;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+  -webkit-animation-name: fade1;
+  -webkit-animation-duration: 3s;
+  animation-name: fade1;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.design{
+    right: 0;
+    left: 0;
+    position: relative;
+    bottom: -40px;
+    text-align: center;
+    color: #ff0000;
+}
+.author_name{
+    right: 0;
+    left: 0;
+    position: relative;
+    bottom: -35px;
+    text-align: center;
+    color: #006600;
+}
+.author_des{
+    right: 0;
+    left: 0;
+    position: relative;
+    bottom: -25px;
+    text-align: center;
+    color: #000000;
+    font-family: cursive;
+    font-size: 15px;
+}
+.my_links{
+    bottom: -590px;
+    text-align: center;
+}
+.fa {
+    position : relative;
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+bottom: -200px;
+
+  
+}
+
+.fa:hover {
+    opacity: 0.4;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-google{
+  background: #ff0000;
+  color:white;
+}
+.feed{
+    position: relative;
+    bottom: -220px;  
+    color: #ff3333;
+    text-align: center;
+}
+.form{
+    position: relative;
+    bottom: -250px;
+    left: 320px;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline-style: hidden;
+    background-color: transparent;
+    
+    display: inline-block;
+    border-radius: 4px;
+    padding-right: 520px;;
+   
+}
+
+input[type=text]:focus {
+    border: 3px solid #00ffff;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[  name=txtMsg]{
+    padding-bottom: 200px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
