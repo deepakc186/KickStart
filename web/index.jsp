@@ -1,3 +1,10 @@
+<%-- 
+    Document   : index
+    Created on : Feb 18, 2018, 4:08:33 AM
+    Author     : Deepak
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <html>
     <head>
@@ -7,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+         
         <script type="text/javascript">
                  
             var slideIndex = 0;
@@ -71,24 +78,85 @@
     <div id="section1">    
         <div class="content">
             <div class="top">
-                <h1>KickStart....</h1>
+                <h1>KickStart<small>Get Started</small>....</h1>
             </div>
             <div class="login">
-                
+                <button id="myBtn">Login</button>
                 <a href="#section2"><span class="otherPage">  ABOUT </span></a>
-               
+                <button id="myBtn1"> Register</button>
             </div>
         </div>
         <!-- The Modal -->
         <div id="myModal" class="modal">
-
         <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
-            </div>
-
+                
+                <div align="center">
+                    
+        <form action="AdminLoginDao.jsp" name="login" onsubmit="return check()">
+            <table cellpadding="10">
+                <tr>
+                    <th colspan="2">Admin Login</th>
+                </tr>        
+                
+                <tr>
+                    <td><b>Email:</b></td>
+                    <td><input type="email" name="email" required/></td>
+                </tr>
+                
+                <tr>
+                    <td><b>Password:</b></td>
+                    <td><input type="password" name="password" required/></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Login"/></td>
+                </tr>
+            </table>
+        </form>
         </div>
+        
+    </div>
+        </div>
+        </div>
+        <!--The register -->
+        <div id="myregister" class="register">
+            <!--register content-->
+            <div class="register-content">
+                <span class="close">&times;</span>
+                <div align="center">
+                    <form action="RegisterDao.jsp" name="register" onsubmit="return check()">
+                        <table cellpadding="10">
+                            <tr>
+                    <th colspan="2">Register Student</th>
+                </tr>        
+                
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td><input type="text" name="name" required/></td>
+                </tr>
+                
+                <tr>
+                    <td><b>Email:</b></td>
+                    <td><input type="email" name="email" required/></td>
+                </tr>
+                <tr>
+                    <td><b>Password:</b></td>
+                    <td><input type="password" name="password" required/></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Register"/></td>
+                </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+        
         
         <div class="horizontal">
                 <ul>
@@ -169,7 +237,7 @@
                 <span class="dot1" onclick="currentSlide1(2)"></span> 
                 <span class="dot1" onclick="currentSlide1(3)"></span> 
             </div>
-         </div>
+         
         
         
         <div class="last">
@@ -250,6 +318,35 @@
 
         </script>
         <script>
+            
+            // Get the modal
+            var modal1 = document.getElementById('myregister');
+
+            // Get the button that opens the modal
+            var btn1 = document.getElementById("myBtn1");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn1.onclick = function() {
+                modal1.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+                       span.onclick = function() {
+                modal.style.display = "none";
+            };
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target === modal1) {
+                    modal1.style.display = "none";
+                }
+            };
+
+        </script>
+        
+        <script>
             $('a[href^="#section2"]').click(function(){
              $('html, body').animate({
                  scrollTop: $( $(this).attr('href') ).offset().top
@@ -278,13 +375,13 @@
                  }
   
     
-    if (slideIndex1> slides1.length) {slideIndex1 = 1} 
-    slides1[slideIndex1-1].style.display = "block"; 
-      dots1[slideIndex1-1].className += " active";
-    setTimeout(showSlides1, 5000); // Change image every 5 seconds
+            if (slideIndex1> slides1.length) {slideIndex1 = 1} 
+                slides1[slideIndex1-1].style.display = "block"; 
+                dots1[slideIndex1-1].className += " active";
+                setTimeout(showSlides1, 5000); // Change image every 5 seconds
 }
 
-        function currentSlide1(no) {
+                function currentSlide1(no) {
             var i;    
             for (i = 0; i < slides1.length; i++) {
                 slides1[i].style.display = "none"; 
